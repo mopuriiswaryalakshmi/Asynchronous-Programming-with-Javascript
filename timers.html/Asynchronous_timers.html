@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asynchronous Timers</title>
+</head>
+<body>
+<script>
+	function asyncLog(val){ //logs values asynchronously
+		setTimeout(function(){ // setTimeout with a time of 0 millisec will execute asynch
+			console.log(val);
+		},0)
+	}
+
+	function run(){
+		console.log("first");
+		console.log("second");
+		console.log("third");
+	}
+
+	run();
+	runAsync();
+
+	function runAsync(){
+		console.log("first");
+		asyncLog("second");
+		console.log("third");
+	}
+</script>
+</body>
+</html>

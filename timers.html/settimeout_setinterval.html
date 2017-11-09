@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SetTimeout and SetInterval</title>
+</head>
+<body>
+    <script>
+	     function runSetTimeout(){
+	     	setTimeout(function(){
+	     		console.log("hello")
+	     	},5000);  //wait 5 seconds
+	     }
+	     var interval;
+	     function runSetinterval(){
+	     	var count = 0;
+	     
+		     interval = setInterval(function(){
+		     	count++;
+		     	console.log(count);
+		     },1000);
+		     //clearInterval(interval);
+	     }
+     </script>
+</body>
+</html>
