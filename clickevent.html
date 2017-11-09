@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asynchronous Programming with Javascript</title>
+</head>
+<body>
+     <button id="myButton">
+     	Click Me!
+     </button>
+     <script>
+          var num = 0
+          document.getElementById("myButton").addEventListener('click',function(){
+     	//button_click=document.getElementById("myButton").addEventListener('click',function(){
+               //alert("HI you clicked me!")
+     		num++;
+     		document.getElementById("myButton").innerHTML = num;
+               //button_click.innerHTML = num;
+     	});
+     </script>
+</body>
+</html>
